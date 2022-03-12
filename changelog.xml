@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+  
+  <changeSet id="NER-374-001" author="Nectarine">
+       <sqlFile path="update/adw_stage/tables/PIPELINE_LOG/001_CREATE_NER-172.ddl"/>
+  </changeSet> 
+
+  <changeSet id="NER-374-002" author="Nectarine">
+       <sqlFile path="update/adw_stage/tables/EAGLEEYE_OCC_CAMPAIGN_DETAILS_BATCH_LOAD/002_CREATE_NER-172.ddl"/>
+  </changeSet> 
+  
+  <changeSet id="NER-374-003" author="Nectarine">
+       <sqlFile path="update/adw_product_tran/views/FINANCE_OCCDTL_VW/001_CREATE_NER-172.ddl"/>
+  </changeSet>
+
+  <changeSet id="NER-374-004" author="Nectarine">
+       <sqlFile path="update/adw_rdv/tables/COUPON_OCCDTL_SAT/001_CREATE_NER-172.ddl"/>
+  </changeSet>
+
+  <changeSet id="NER-374-005" author="Nectarine">
+       <sqlFile path="update/adw_bdv/tables/OCC_BARCODE_CLASSIFICATION_BR/001_CREATE_NER-172.ddl"/>
+  </changeSet>
+
+  <changeSet id="NER-374-006" author="Nectarine">
+       <sqlFile path="update/adw_stage/file_format/eagleeye_multiline_csv/001_CREATE_NER-378.ddl"/>
+  </changeSet>
+
+  <changeSet id="NER-374-007" author="Nectarine">
+       <sqlFile path="update/adw_stage/stages/STAGE_EAGLEYE_OCC_CAMPAIGN_DETAILS/001_CREATE_NER-381.ddl"/>
+  </changeSet>
+
+  <changeSet id="NER-374-008" author="Nectarine">
+       <sqlFile path="update/adw_product_tran/views/FINANCE_OCCDTL_VW/002_ALTER_NER-172.ddl"/>
+  </changeSet>
+
+  <changeSet id="NER-375-001" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/ADD_LOG_SP/003_CREATE_NER-172.sql"/>
+  </changeSet>
+
+  <changeSet id="NER-375-002" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/FETCH_FROM_CAMPAIGN_DETAILS_STREAM_PROC_SP/001_CREATE_NER-172.sql"/>
+  </changeSet>
+
+  <changeSet id="NER-375-003" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/FETCH_FROM_FINANCE_OCCDTL_VW_SP/002_CREATE_NER-172.sql"/>
+  </changeSet>
+  
+  <changeSet id="NER-375-004" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/CAMPAIGN_DETAILS_DATALOAD_PIPELINE_TASK_WRP_SP/003_CREATE_NER-172.sql"/>
+  </changeSet>
+
+  <changeSet id="NER-375-005" author="Nectarine">
+       <sqlFile path="update/adw_bdv/procedures/FETCH_FROM_OCCDTL_SAT_TO_LOAD_BARCODE_CLASS_PROC_SP/003_CREATE_NER-189.sql"/>
+  </changeSet>
+
+  <changeSet id="NER-375-006" author="Nectarine">
+       <sqlFile path="update/adw_stage/tasks/CAMPAIGN_DETAILS_DATALOADPIPELINE_TASK/001_CREATE_NER-172.sql"/>
+  </changeSet>
+
+   <changeSet id="NER-389-001" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/FETCH_FROM_CAMPAIGN_DETAILS_STREAM_PROC_SP/001_ALTER_NER-172.sql"/>
+  </changeSet>
+
+  <changeSet id="NER-391-001" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/ADD_LOG_SP/003_ALTER_NER-391.sql"/>
+  </changeSet>
+
+  <changeSet id="NER-391-002" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/CAMPAIGN_DETAILS_DATALOAD_PIPELINE_TASK_WRP_SP/003_ALTER_NER-391.sql"/>
+  </changeSet>
+
+  <changeSet id="NER-391-003" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/FETCH_FROM_CAMPAIGN_DETAILS_STREAM_PROC_SP/001_ALTER_NER-391.sql"/>
+  </changeSet>  
+
+  <changeSet id="NER-391-004" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/FETCH_FROM_FINANCE_OCCDTL_VW_SP/002_ALTER_NER-391.sql"/>
+  </changeSet>  
+
+  <changeSet id="NER-391-005" author="Nectarine">
+       <sqlFile path="update/adw_bdv/procedures/FETCH_FROM_OCCDTL_SAT_TO_LOAD_BARCODE_CLASS_PROC_SP/003_ALTER_NER-391.sql"/>
+  </changeSet>      
+  
+  <changeSet id="NER-387-002" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/FETCH_FROM_FINANCE_OCCDTL_VW_SP/003_ALTER_NER-387.sql"/>
+  </changeSet> 
+
+  <changeSet id="NER-392-001" author="Nectarine">
+       <sqlFile path="update/adw_stage/tasks/CAMPAIGN_DETAILS_DATALOADPIPELINE_TASK/002_ALTER_NER-392.sql"/>
+  </changeSet> 
+
+  <changeSet id="NER-393-001" author="Nectarine">
+       <sqlFile path="update/adw_product_tran/views/FINANCE_OCCDTL_VW/003_ALTER_NER-393.ddl"/>
+  </changeSet> 
+
+  <changeSet id="NER-395-001" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/FETCH_FROM_FINANCE_OCCDTL_VW_SP/004_ALTER_NER-395.sql"/>
+  </changeSet> 
+
+  <changeSet id="NER-395-002" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/FETCH_FROM_FINANCE_OCCDTL_VW_SP/005_ALTER_NER-395.sql"/>
+  </changeSet>
+
+  <changeSet id="NER-386-001" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/FETCH_FROM_FINANCE_OCCDTL_VW_SP/006_ALTER_NER-386.sql"/>
+  </changeSet> 
+
+  <changeSet id="NER-386-002" author="Nectarine">
+       <sqlFile path="update/adw_stage/procedures/FETCH_FROM_FINANCE_OCCDTL_VW_SP/007_ALTER_NER-386.sql"/>
+  </changeSet>
+
+  <changeSet id="NER-398-001" author="Nectarine">
+       <sqlFile path="update/adw_bdv/procedures/FETCH_FROM_OCCDTL_SAT_TO_LOAD_BARCODE_CLASS_PROC_SP/004_ALTER_NER-398.sql"/>
+  </changeSet> 
+
+  <changeSet id="NER-400-001" author="Nectarine">
+       <sqlFile path="update/adw_bdv/tables/OCC_BARCODE_CLASSIFICATION_BR/002_ALTER_NER-400.ddl"/>
+  </changeSet> 
+
+  <changeSet id="NER-400-002" author="Nectarine">
+       <sqlFile path="update/adw_bdv/procedures/FETCH_FROM_OCCDTL_SAT_TO_LOAD_BARCODE_CLASS_PROC_SP/005_ALTER_NER-400.sql"/>
+  </changeSet>
+</databaseChangeLog>

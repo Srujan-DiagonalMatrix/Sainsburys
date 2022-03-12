@@ -1,0 +1,46 @@
+insert into "SCRATCH"."WORKSPACE"."EAGLEEYE_OCC_CAMPAIGN_DETAILS"
+SELECT parse_json(''),
+  's3://dpp-dev-raw-src-eagleeye-occ/coupondetails/data/coupondetails_20181113.csv',
+  to_timestamp_ntz('2013-04-05 01:02:03');
+
+
+insert into "SCRATCH"."WORKSPACE"."EAGLEEYE_OCC_CAMPAIGN_DETAILS"
+  SELECT parse_json('{
+  "COUPON_ID": 9930149239995,
+  "COUPON_NAME": "iteration_1",
+  "COUPON_TAG": "2022_Vi_CD",
+  "PRINTER_MESSAGE": "COUPON",
+  "SHORT_DESC": "122654_Kiddylicious_1",
+  "LONG_DESC": "Deposit_Return_Points_Supplier Test",
+  "OFFER_EFFECTIVE_DATE": "03/03/2021 23:59:05",
+  "OFFER_EXPIRATION_DATE": "13/04/2021 23:59:05",
+  "REWARD_VALUE_FIXED": 3,
+  "COUPON_PRINT_START_DATE": "03/03/2021",
+  "ACCOUNT_CODE": 48030,
+  "COST_CENTRE": "N0000",
+  "EST_DIST_QUANTITY": 1,
+  "EST_REDEMPTION_RATE": 1,
+  "THRESHOLD": 0.01,
+  "VALIDATION_TYPE": "1. Item Quantity",
+  "THRESHOLD_UNITS": 1,
+  "PROMO_ID": 538159,
+  "REWARD_VALUE_POINTMULTI": 3,
+  "NECTAR_PRODUCT_RANGE": 1,
+  "REWARD_VALUE_MONEY": 0.5,
+  "LOYALTY_CARD_REQUIRED": "Y",
+  "INSTORE": "No",
+  "GOL": "No",
+  "ROLLING_DAYS_VALIDITY": 2,
+  "PHOEBUS_CODE": 12265,
+  "I2C_EMAIL": "Joel.Parker@kiddylicious.com",
+  "SUPPLIER_NAME": "Kiddylicious",
+  "OC_ID": 295263,
+  "UNIT": 3231,
+  "OWNER": 11110,
+  "REWARD_TYPE": "supplierMoneyOff",
+  "BARCODE": 9930149239995,
+  "CREATEDATE": "28/01/2021 13:10:03",
+  "STATUS": "ACTIVE"
+  }'),
+  's3://dpp-dev-raw-src-eagleeye-occ/coupondetails/data/coupondetails_20181113.csv',
+  to_timestamp_ntz('2013-04-05 02:02:05');
